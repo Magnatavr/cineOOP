@@ -1,21 +1,44 @@
-# the composer package lock file and install directory
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# /composer.lock
-/fuel/vendor
+# Игнорируем системные файлы и IDE
+.DS_Store
+*.log
+*.tmp
 
-# the fuelphp document
-/docs/
+# PhpStorm / VSCode
+.idea/
+.vscode/
 
-# you may install these packages with `oil package`.
-# http://fuelphp.com/docs/packages/oil/package.html
-# /fuel/packages/auth/
-# /fuel/packages/email/
-# /fuel/packages/oil/
-# /fuel/packages/orm/
-# /fuel/packages/parser/
+# Файлы Composer (если используешь)
+vendor/
+composer.lock
 
-# dynamically generated files
-/fuel/app/logs/*/*/*
-/fuel/app/cache/*/*
-/fuel/app/config/crypt.php
+# Кеши и сессии
+cache/
+*.cache
+*.bak
+*.swp
+*.swo
+*.pid
+*.seed
+
+# Загрузки (если пользовательские файлы, можно уточнить)
+uploads/
+attachments/
+*.zip
+*.tar.gz
+
+# Конфиги (если хранишь локально)
+.env
+.env.local
+
+# Node (если вдруг используешь фронт)
+node_modules/
+dist/
+build/
+
+# Тестовые файлы
+tests/output/
+phpunit.xml
+
+# OS specific
+ehthumbs.db
+Icon?
