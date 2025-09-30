@@ -42,3 +42,8 @@ phpunit.xml
 # OS specific
 ehthumbs.db
 Icon?
+
+
+self-version/public/storage
+video-version/public/storage
+
